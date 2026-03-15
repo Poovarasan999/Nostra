@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Offer -->
+    <div id="offer" class="offer-box">
+        <h1 id="offer__text">Sign Up and <strong>GET 20% OFF</strong> for your first Order</h1>
+        <h1 id="offer__close">X</h1>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar__container">
+        <div class="navbar__logo">
+            <h1>Nostra</h1>
+        </div>
+
+        <div class="navbar__links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#new-arrivals">New Arrival</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="menu__icon" id="menuIcon">
+            <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+        </div>
+    </div>
+
+    <!-- Mobile Side Nav -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav__header">
+            <h2>Menu</h2>
+            <span id="sideNavClose">✕</span>
+        </div>
+        <div class="side-nav__links">
+            <a href="#home">Home</a>
+            <a href="#new-arrivals">New Arrival</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+
+    <section class="hero" id="home">
+        <div class="hero__bg">
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=1200&q=80"
+                alt="Fashion Left" />
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80"
+                alt="Fashion Right" />
+        </div>
+        <button class="hero__arrow hero__arrow--left" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="hero__content">
+            <h1>Level up your style with our</h1>
+            <p>Summer Collections</p>
+            <button>Shop Now</button>
+        </div>
+        <button class="hero__arrow hero__arrow--right" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </section>
+
+
+    <section class="brands-section">
+        <h2 class="brands-title">Brands</h2>
+        <div class="brands-row">
+            <div class="brand-card">
+                <img src="https://cdn.simpleicons.org/puma/000000" alt="Puma logo" />
+                <p>Puma</p>
+            </div>
+            <div class="brand-card">
+                <img src="https://cdn.simpleicons.org/adidas/000000" alt="Adidas logo" />
+                <p>Adidas</p>
+            </div>
+            <div class="brand-card">
+                <img src="https://cdn.simpleicons.org/simpleicons/000000" alt="Simple logo" />
+                <p>Simple</p>
+            </div>
+            <div class="brand-card">
+                <img src="https://cdn.simpleicons.org/leaflet/000000" alt="Leaves logo" />
+                <p>Leaves</p>
+            </div>
+            <div class="brand-card">
+                <img src="https://cdn.simpleicons.org/behance/000000" alt="Behance logo" />
+                <p>Behance</p>
+            </div>
+            <div class="brand-card">
+                <img src="https://cdn.simpleicons.org/twitch/000000" alt="Twitch logo" />
+                <p>Twitch</p>
+            </div>
+            <div class="brand-card">
+                <img src="https://cdn.simpleicons.org/leaflet/000000" alt="Leaves logo" />
+                <p>Leaves</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="experience">
+        <div class="top">
+            <h2>We Provide Best<br />Customer Experiences</h2>
+            <p><span class="bar">||</span> We ensure that our customer have the best shoping experience</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <div class="icon-circle"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>Original Products</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Poro, consequatur.</p>
+            </article>
+            <article class="card">
+                <div class="icon-circle"><i class="fa-regular fa-face-smile"></i></div>
+                <h3>Satisfaction Guarantee</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Poro, consequatur.</p>
+            </article>
+            <article class="card">
+                <div class="icon"><i class="fa-solid fa-tag"></i></div>
+                <h3>New Arrival Everyday</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Poro, consequatur.</p>
+            </article>
+            <article class="card">
+                <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Fast & Free Shipping</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Poro, consequatur.</p>
+            </article>
+        </div>
+    </section>
+
+
+
+
+    <section class="new-arrivals reveal-up" id="new-arrivals">
+        <h2 class="new-arrivals__title">New Arrivals</h2>
+        <div class="new-arrivals__grid">
+            <article class="arrival-card">
+                <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=900&q=80"
+                    alt="Printed shirt" />
+                <button class="arrival-card__btn">Shop Now &#8594;</button>
+            </article>
+            <article class="arrival-card">
+                <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=80"
+                    alt="Casual pants" />
+                <button class="arrival-card__btn">Shop Now &#8594;</button>
+            </article>
+            <article class="arrival-card">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=80"
+                    alt="Blue shirt" />
+                <button class="arrival-card__btn">Shop Now &#8594;</button>
+            </article>
+            <article class="arrival-card">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80"
+                    alt="Brown jacket" />
+                <button class="arrival-card__btn">Shop Now &#8594;</button>
+            </article>
+        </div>
+    </section>
+
+
+
+    <section class="most-wanted reveal-up" id="most-wanted">
+        <h2 class="most-wanted__title">Most Wanted</h2>
+
+        <div class="most-wanted__grid">
+            <article class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80"
+                    alt="Black shirt" />
+                <button class="wish-btn" aria-label="Add to wishlist">&#9825;</button>
+            </article>
+
+            <article class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=80"
+                    alt="Printed shirt" />
+                <button class="wish-btn" aria-label="Add to wishlist">&#9825;</button>
+            </article>
+
+            <article class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="https://images.unsplash.com/photo-1602810316693-3667c854239a?auto=format&fit=crop&w=700&q=80"
+                    alt="Light blue shirt" />
+                <button class="wish-btn" aria-label="Add to wishlist">&#9825;</button>
+            </article>
+
+            <article class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=700&q=80"
+                    alt="Brown jacket" />
+                <button class="wish-btn" aria-label="Add to wishlist">&#9825;</button>
+            </article>
+
+            <article class="product-card">
+                <span class="sale-badge">sale</span>
+                <img src="https://images.unsplash.com/photo-1604695573706-53170668f6a6?auto=format&fit=crop&w=700&q=80"
+                    alt="White shirt" />
+                <button class="wish-btn" aria-label="Add to wishlist">&#9825;</button>
+            </article>
+        </div>
+    </section>
+
+
+
+    <section class="offer-banner">
+        <img class="offer-banner__image"
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80"
+            alt="Fashion Offer" />
+
+        <div class="offer-banner__content">
+            <h2>Limited Offer</h2>
+            <p>35% OFF on this for the first 30 Customers</p>
+            <button>Shop Now →</button>
+        </div>
+    </section>
+
+
+
+
+    <section class="newsletter">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <form class="newsletter__form" action="#" method="post">
+            <input type="email" name="email" placeholder="" aria-label="Enter your email" required />
+            <button type="submit">Subscribe →</button>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__brand">Nostra</h2>
+            <p class="footer__text">
+                The Standard chunk of Lorem ipsum used since the 1500s is reproduced below
+                for those interest
+            </p>
+            <div class="footer__social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <p class="footer__copy">@ 2026 Nostra.com</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

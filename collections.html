@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra | Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8HNHmhF2vH+R5eY5f+v9nYx04kS9G0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="collections.css" />
+  </head>
+  <body>
+    <div id="offer" class="offer-box">
+      <h1 id="offer__text">Sign Up and <strong>GET 20% OFF</strong> for your first Order</h1>
+      <h1 id="offer__close">X</h1>
+    </div>
+
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <h1>Nostra</h1>
+      </div>
+
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#new-arrivals">New Arrival</a>
+        <a href="index.html#most-wanted">Most Wanted</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="menu__icon" id="menuIcon" aria-label="Open menu" aria-expanded="false" role="button">
+        <span>☰</span>
+      </div>
+    </div>
+
+    <div class="side-nav" id="sideNav">
+      <div class="side-nav__header">
+        <h2>Menu</h2>
+        <span id="sideNavClose">✕</span>
+      </div>
+      <div class="side-nav__links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#new-arrivals">New Arrival</a>
+        <a href="index.html#most-wanted">Most Wanted</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="container main-content">
+      <section class="collections-layout">
+        <aside class="filters-panel">
+          <div class="filter-group">
+            <h2>Occasion</h2>
+            <div class="filter-list">
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="occasion" value="summer" checked />
+                Summer
+              </label>
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="occasion" value="party" checked />
+                Party
+              </label>
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="occasion" value="beach" checked />
+                Beach
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h2>Colors</h2>
+            <div class="filter-list">
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="color" value="red" />
+                Red
+              </label>
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="color" value="blue" checked />
+                Blue
+              </label>
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="color" value="white" checked />
+                White
+              </label>
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="color" value="green" />
+                Green
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h2>Arrivals</h2>
+            <div class="filter-list">
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="arrival" value="new" checked />
+                New
+              </label>
+              <label>
+                <input type="checkbox" class="collection-filter" data-filter="arrival" value="old" />
+                Old
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <section class="products-section">
+          <div class="search-box">
+            <input id="productSearch" type="text" placeholder="search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div id="collectionGrid" class="collection-grid">
+            <article class="product-card" data-name="Blue Summer Shirt" data-occasion="summer" data-color="blue" data-arrival="new">
+              <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                alt="Blue Summer Shirt"
+                class="product-image"
+              />
+              <h4 class="product-title">Blue Summer Shirt</h4>
+              <p class="product-price">Rs. 1299</p>
+            </article>
+
+            <article class="product-card" data-name="White Beach Tee" data-occasion="beach" data-color="white" data-arrival="new">
+              <img
+                src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80"
+                alt="White Beach Tee"
+                class="product-image"
+              />
+              <h4 class="product-title">White Beach Tee</h4>
+              <p class="product-price">Rs. 999</p>
+            </article>
+
+            <article class="product-card" data-name="Red Party Dress" data-occasion="party" data-color="red" data-arrival="new">
+              <img
+                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80"
+                alt="Red Party Dress"
+                class="product-image"
+              />
+              <h4 class="product-title">Red Party Dress</h4>
+              <p class="product-price">Rs. 2199</p>
+            </article>
+
+            <article class="product-card" data-name="Green Beach Shirt" data-occasion="beach" data-color="green" data-arrival="old">
+              <img
+                src="https://images.unsplash.com/photo-1618677366787-9727aacca7ea?auto=format&fit=crop&w=700&q=80"
+                alt="Green Beach Shirt"
+                class="product-image"
+              />
+              <h4 class="product-title">Green Beach Shirt</h4>
+              <p class="product-price">Rs. 1499</p>
+            </article>
+
+            <article class="product-card" data-name="White Party Top" data-occasion="party" data-color="white" data-arrival="old">
+              <img
+                src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=700&q=80"
+                alt="White Party Top"
+                class="product-image"
+              />
+              <h4 class="product-title">White Party Top</h4>
+              <p class="product-price">Rs. 1199</p>
+            </article>
+
+            <article class="product-card" data-name="Blue Summer Polo" data-occasion="summer" data-color="blue" data-arrival="new">
+              <img
+                src="https://images.unsplash.com/photo-1602810316693-3667c854239a?auto=format&fit=crop&w=700&q=80"
+                alt="Blue Summer Polo"
+                class="product-image"
+              />
+              <h4 class="product-title">Blue Summer Polo</h4>
+              <p class="product-price">Rs. 1399</p>
+            </article>
+          </div>
+          <p id="emptyState" class="empty-state">No products found</p>
+        </section>
+      </section>
+    </main>
+
+    <section class="newsletter container">
+      <h3>Join our News Letter</h3>
+      <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__brand">Nostra</h2>
+            <p class="footer__text">
+                The Standard chunk of Lorem ipsum used since the 1500s is reproduced below
+                for those interest
+            </p>
+            <div class="footer__social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <p class="footer__copy">@ 2026 Nostra.com</p>
+        </div>
+    </footer>
+    <script src="collections.js"></script>
+  </body>
+</html>
